@@ -1,0 +1,16 @@
+<table class="countries" style="float:right">
+    <th colspan="2">COUNTRIES</th>
+    <% @categories.in_groups_of(2, false) do |row_category| %>
+        <tr>
+            <% for category in row_category%>
+            <td>
+                <p><%=category.title%></p>
+                <%= link_to (image_tag category.image, :style => "height:50px"), category %>
+                <p><%= category.description %></p>
+            <a href="/category/<%= category.title %>" class="button"><%= category.title %></a>
+            </td>
+            <% end %>
+        </tr>
+    <% end %>
+</table>
+

@@ -1,0 +1,36 @@
+<div class="search"; align="center"><h2>You searched for "<%= @search_term %>"</h2>
+
+<% if @items.length == 0  %>
+<br />
+<h2>No products were found to match your search.</h2>
+<% end %>
+</div>
+
+<table class="catalog1"; align="center">
+  <% @items.in_groups_of(5,false) do |row_item| %>
+      <tr>
+        <% for item in row_item%>
+        <td>
+          <div class="image">
+            <%= link_to (image_tag item.image_url, :style => "height:100px"), item %>
+          </div>
+          <div class="title">
+            <%= link_to item.title, item %>
+          </div>
+         <div class="price">
+             <%= number_to_currency(item.price, :unit => "€") %>
+          </div>
+          <div class="links">
+            <% if user_signed_in? %>
+              <%= link_to 'Edit', edit_item_path(item) %>
+              <%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <%else%>
+            
+              <a href="/cart/<%= item.id %>">Add to Cart</a>
+            <%end%>  
+        </div>
+        </td>
+        <%end%> 
+      </tr>
+    <% end %>
+</table>

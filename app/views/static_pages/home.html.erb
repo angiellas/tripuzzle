@@ -1,0 +1,21 @@
+<% provide(:title, "Home") %>
+
+<div class="mainCont">
+    
+    <ul>
+    <li><%= image_tag("home1.png", alt: "Welcome home", :class =>"welcomeIm") %></li>
+    
+    <div class="mainContText">
+        <h1>Welcome to Tripuzzle</h1>
+        <p>Where your trip memories are fun!</p>
+            
+    </div>
+    </ul>
+</div>
+<div class=mainBottom>
+    
+    <%=render 'layouts/popular'%>
+    
+    <%=render 'layouts/categories'%>
+    
+</div>

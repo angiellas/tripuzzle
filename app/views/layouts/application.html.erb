@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %>Tripuzzle | A world of puzzles</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    
+    <header class="headSec">
+      <h1></h1>
+      </header>
+     <header class="headSec1"> 
+      <ul>
+    <li><%= link_to "|Home|",  root_path %></li>
+    <li><%= link_to "|Products|",  items_path %></li>
+    <li><%= link_to "|About us|", about_path  %></li>
+    <li><%= link_to "|Contact|", contact_path %></li>
+    <li><%= link_to "|Cart|", cart_path  %></li>
+    
+    
+    
+          <% if user_signed_in? %>
+                 <li><%= link_to '|My profile|', edit_user_registration_path %> </li>
+                 <li><%= link_to '|Sign out|', destroy_user_session_path, :method => :delete %></li>
+                 <li><%= link_to "|View Orders|", orders_path  %></li>
+          <% else %>
+                 <li><%= link_to '|Register|', new_user_registration_path %></li> 
+                 <li><%= link_to '|Sign in|', new_user_session_path %></li>
+          <% end %>
+          
+                <li><div class="busca"><%=render 'layouts/search'%></div></li>
+
+    
+  
+    
+    
+       </ul>
+     
+      </header>
+      <div class="container"></div>
+        
+    <%= yield %>
+    </div>
+    
+    
+     
+       <% if current_user.try(:admin?) %>
+       <%= link_to 'New Category', new_category_path, :class =>"button", :role=>"button"  %>
+      <% end %>
+    
+    
+    <footer class="foot">
+    <h1>Tripuzzle © Copyright 2018 - ABC</h1>
+    </footer>
+    
+   
+  </body>
+</html>

@@ -1,0 +1,371 @@
+.headSec {
+    background: url("/assets/site/background3.jpg");
+    background-size:100% 100%;
+    min-height:200px;
+    /*background-repeat: no-repeat;
+    
+    
+    
+    width: 100%;
+    height: 100%;
+    overflow: auto;*/
+    
+}
+
+.headSec1{
+    color: #993333;
+    font-size: 20px;
+    padding: 0px;
+    text-align: left;
+    font-family: luminari, fantasy;
+    letter-spacing: 3px;
+    
+    padding-bottom: 10px;
+}
+/*.headSec h1 {
+    color: #ff9900;
+    font-size: 180px;
+    padding: 10px;
+    text-align: left;
+    font-family: luminari, fantasy;
+    text-shadow: 2px 2px 8px #000000;
+    letter-spacing: 3px;
+    position: relative;
+}*/
+/*.headSec p {
+    color: #993333;
+    font-size: 60px;
+    padding: 0px;
+    text-align: left;
+    font-family: luminari, fantasy;
+    letter-spacing: 3px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}*/
+    
+
+
+ul { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #993333;
+    
+    
+}
+
+li {float:left;}
+
+li a {
+    display: block;
+    color: #ffffff;
+    text-align: justify;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+
+.mainCont { 
+    
+    margin: auto;
+    width:80%;
+    border: 3px solid #993333;
+    padding: 10px;
+   
+}
+
+.mainContText{
+    color:white;
+    text-align: center;
+    font-family: luminari, fantasy;
+    font-size: 45px;
+}
+
+.welcomeIm {
+    width: 90%;
+    margin-top: 15px;
+    margin-left: 10px;
+    
+}
+.foot {
+    color: #ffffff;
+    min-height: 40px;
+    background-color: #993333;
+    width: 100%;
+    margin-top: 10px;
+    overflow: auto;
+    text-align: center;
+    font-size: 8px;
+    font-family: luminari, fantasy;
+}
+
+/*.container {
+     background: url("/assets/site/home1.jpg");
+     background-repeat:no-repeat;
+     background-position:right bottom;
+     width: 100%;
+     min-height: 700px;
+}*/
+
+#itemsContainer h1 {
+   display: block;
+    color: #993333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: luminari, fantasy;
+    
+    
+}
+#itemsContainer {
+   display: block;
+    color: #993333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: luminari, fantasy;
+    
+}
+.itemhols {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 22%;
+    padding:10px;
+    min-height: 300px;
+   
+}
+
+
+.itemhols h1 {
+   display: block;
+    color: #993333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: luminari, fantasy;
+    
+}
+
+
+.itemhols p {
+   display: block;
+    color: #993333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: luminari, fantasy;
+    
+}
+
+
+
+.itemholsIm {
+    width: 30%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block;
+    
+}
+
+
+.button {
+    background-color: #993333;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: luminari, fantasy;
+}
+
+
+
+#customers {
+    font-family: luminari, fantasy;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+    font-family: luminari, fantasy;
+}
+
+.busca{
+    text-align: center;
+    color: white;
+    padding-top: 14px;
+    position: absolute;
+    ;
+}
+
+.mainPopular h2{
+    text-align: center;
+    font-size: 50px;
+    font-family: luminari, fantasy;
+    color:#993333;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    
+}
+
+.mainCategories h2{
+    text-align: left;
+    font-size: 50px;
+    font-family: luminari, fantasy;
+    color:#993333;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    
+}
+
+.countries{
+    border: 3px solid #993333;
+    width: 49%;
+}
+
+.countries th{
+    text-align: center;
+    font-size: 50px;
+    font-family: luminari, fantasy;
+    color:#993333;
+}
+.catalog{
+    border: 3px solid #993333;
+    width: 50%;
+    
+}
+.catalog th{
+    text-align: center;
+    font-size: 50px;
+    font-family: luminari, fantasy;
+    color:#993333;
+    
+}
+.mainBottom{
+    overflow: hidden;
+    font-family: luminari, fantasy;
+    text-align: center;
+    font-size: 13px;
+    
+}
+
+.itemholsC{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 22%;
+    padding:10px;
+    min-height: 300px;
+    font-size: 15px;
+    font-family: luminari, fantasy;
+    color:#993333;
+    
+}
+
+.itemholsImC{
+    width: 30%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block;
+}
+
+.aboutus h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: luminari, fantasy;
+    color:#993333;
+}
+.aboutus p{
+    text-align: center;
+    font-size: 20px;
+    font-family: luminari, fantasy;
+    color:#993333;
+}
+
+.contact{
+    font-size: 20px;
+    font-family: luminari, fantasy;
+    color:#993333;
+}
+.field{
+    
+    font-size: 20px;
+    font-family: luminari, fantasy;
+    color:#993333;
+    
+    
+}
+.signup{
+    font-size: 20px;
+    font-family: luminari, fantasy;
+    color:#993333;
+}
+.actions{
+    background-color: #993333;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: luminari, fantasy;
+}
+.paypal {
+    font-size: 20px;
+    font-family: luminari, fantasy;
+    color:#993333;
+}
+
+.emptycart{
+    font-size: 30px;
+    font-family: luminari, fantasy;
+    color:#993333;
+    text-align: center;
+}
+
+
+
+.cancel{
+    font-size: 20px;
+    font-family: luminari, fantasy;
+    color:#993333;
+    
+}
+.search{
+    font-size: 20px;
+    font-family: luminari, fantasy;
+    color:#993333;
+}
+.catalog1{
+    font-family: luminari, fantasy;
+    text-align: center;
+    font-size: 17px;
+}
