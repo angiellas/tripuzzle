@@ -1,5 +1,7 @@
 # README
 
+E-commerce website developed to sell jigsaw puzzles with popular attractions worldwide.
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
